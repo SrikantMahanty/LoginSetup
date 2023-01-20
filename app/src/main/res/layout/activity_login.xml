@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#27D7EE"
+    android:orientation="vertical"
+    android:gravity="center"
+
+    tools:context=".LoginActivity">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#53B4E4"
+            android:layout_gravity="center_horizontal"
+            android:padding="24dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:textColor="#B13BC5"
+                android:textSize="36sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:id="@+id/login_email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                    android:textStyle="bold|normal"
+                android:textColorHint="@color/black"
+                android:layout_marginTop="40dp"
+                android:drawablePadding="8dp"
+                android:hint="Email"
+
+                android:padding="8dp"
+                android:textColor="#33FF88" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/login_password"
+                android:textStyle="normal|bold"
+                android:textColorHint="@color/black"
+                android:layout_marginTop="20dp"
+                android:padding="8dp"
+                android:hint="Password"
+
+                android:drawablePadding="8dp"
+                android:textColor="@color/black"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Login"
+                android:id="@+id/login_button"
+                android:textSize="18sp"
+                android:layout_marginTop="30dp"
+
+                app:cornerRadius = "20dp"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/Registertv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="10dp"
+        android:text="Register"
+        android:textSize="23sp"
+        android:textColor="#D4134A"
+        android:textStyle="bold|normal"/>
+    <TextView
+        android:id="@+id/forgetpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="10dp"
+        android:text="Forgot Password"
+        android:textColor="#D4134A"
+        android:textSize="23sp"
+        android:textStyle="bold|normal"/>
+</LinearLayout>
